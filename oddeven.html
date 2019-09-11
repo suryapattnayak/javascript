@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>java script example</title>
+<script type="text/javascript">
+  var num=100;
+
+  function oddnum(num)
+  {
+    document.write("ODD"+"<br>");
+    for(i=0;i<num;i++)
+    {
+      if(i%2 !== 0)
+      {
+        document.write(i+"<br>");
+      }
+    }
+  }
+
+  function evennum(num)
+  {
+      document.write("EVEN"+"<br>")
+    for(j=0;j<num;j++)
+    {
+      if(j%2 == 0)
+      {
+        document.write(j+"<br>")
+      }
+    }
+  }
+</script>
+</head>
+<body>
+  <a href="#" onclick="oddnum(num);">ODD</a>
+  <a href="#" onclick="evennum(num);">EVEN</a>
+</body>
+</html>

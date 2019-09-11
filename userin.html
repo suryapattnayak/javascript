@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    length<input type="text" id="length"><br>
+    bredth<input type="text" id="bredth"><br>
+     <button onclick="test(length,bredth)">Submit</button>
+     <script type="text/javascript">
+       function test(length,bredth)
+       {
+         var length=document.getElementById("length").value;
+         var bredth=document.getElementById("bredth").value;
+         var pi=Math.PI;
+         document.write(pi*length*bredth)
+       }
+     </script>
+  </body>
+</html>

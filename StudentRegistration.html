@@ -1,0 +1,119 @@
+<html>
+<head>
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+<form action="#" name="StudentRegistration" onsubmit="return(validate());">
+
+<table cellpadding="2" width="20%"  align="center"
+cellspacing="2">
+
+<tr>
+<td colspan=2>
+<center><font size=4><b>Student Registration Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td>Name</td>
+<td><input type=text name=textnames id="textname" size="30"></td>
+</tr>
+
+
+<tr>
+<td>Personal Address</td>
+<td><input type="text" name="personaladdress"
+id="personaladdress" size="30"></td>
+</tr>
+
+<tr>
+<td>Sex</td>
+<td><input type="radio" name="sex" id="sex" value="male" size="10">Male
+<input type="radio" name="sex" id="sex" value="Female" size="10">Female</td>
+</tr>
+
+<tr>
+<td>City</td>
+<td><select name="City">
+<option value="-1" selected>select..</option>
+<option value="New Delhi" id="city">NEW DELHI</option>
+<option value="Mumbai" id="city">MUMBAI</option>
+<option value="Goa" id="city">GOA</option>
+<option value="Patna" id="city">PATNA</option>
+</select></td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td><select name="Course">
+<option value="-1" selected>select..</option>
+<option value="B.Tech" id="cource">B.TECH</option>
+<option value="MCA" id="cource">MCA</option>
+<option value="MBA" id="cource">MBA</option>
+<option value="BCA" id="cource">BCA</option>
+</select></td>
+</tr>
+<tr>
+  <td>Language</td>
+  <td>  <input type="checkbox" name="vehicle1" id="lang" value="English">English<br>
+  <input type="checkbox" name="vehicle2" id="lang" value="Odiya"> Odiya<br>
+  <input type="checkbox" name="vehicle3" id="lang" value="Bengali"> Bengali<br><br>
+  <td>
+</tr>
+<tr>
+<td>District</td>
+<td><select name="District">
+<option value="-1" selected>select..</option>
+<option value="Nalanda" id="district">NALANDA</option>
+<option value="UP" id="district">UP</option>
+<option value="Goa" id="district">GOA</option>
+<option value="Patna" id="district">PATNA</option>
+</select></td>
+
+</tr>
+
+<tr>
+<td>State</td>
+<td><select Name="State">
+<option value="-1" selected>select..</option>
+<option value="New Delhi" id="state">NEW DELHI</option>
+<option value="Mumbai" id="state">MUMBAI</option>
+<option value="Goa" id="state">GOA</option>
+<option value="Bihar" id="state">BIHAR</option>
+</select></td>
+</tr>
+
+<tr>
+<td>EmailId</td>
+<td><input type="text" name="emailid" id="emailid" size="30"></td>
+</tr>
+
+
+
+<tr>
+<td>MobileNo</td>
+<td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+</tr>
+<tr>
+<td><input type="reset"></td>
+<td colspan="2"><button onclick="display()">Submit</button></td>
+</tr>
+</table>
+</form>
+<script type="text/javascript">
+function display(){
+  var name=document.getElementById("textname").value;
+  var pers=document.getElementById("personaladdress").value;
+  var sex=document.getElementById("sex").value;
+  var city=document.getElementById("city").value;
+  var cource=document.getElementById("cource").value;
+  var district=document.getElementById("district").value;
+  var state=document.getElementById("state").value;
+  var emailid=document.getElementById("emailid").value;
+  var mobileno=document.getElementById("mobileno").value;
+  var lang=document.getElementById("lang").value
+  document.write(name+"<br>"+pers+"<br>"+sex+"<br>"+city+"<br>"+cource+"<br>"+lang+"<br>"+district+"<br>"+state+"<br>"+emailid+"<br>"+mobileno);
+}
+</script>
+</body>
+</html>
