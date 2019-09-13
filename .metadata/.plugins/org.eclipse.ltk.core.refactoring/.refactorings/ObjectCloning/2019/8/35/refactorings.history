@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ObjectCloning.Student&apos; to &apos;StudentCloneDemo&apos;&#x0D;&#x0A;- Original project: &apos;ObjectCloning&apos;&#x0D;&#x0A;- Original element: &apos;ObjectCloning.Student&apos;&#x0D;&#x0A;- Renamed element: &apos;ObjectCloning.StudentCloneDemo&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Student&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;ObjectCloning{Student.java[Student" matchStrategy="1" name="StudentCloneDemo" qualified="false" references="true" similarDeclarations="false" stamp="1566984363188" textual="false" version="1.0"/>
+</session>

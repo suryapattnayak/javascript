@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	color: white;
+	text-align: center;
+}
+
+.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color: white;
+}
+</style>
+</head>
+<body>
+	<div class="top-left">
+		<img src="bmw.jpg" alt="Snow" style="width: 100%;">
+		<div class="top-left">Bayerische Motoren Werke AG, commonly
+			known as Bavarian Motor Works, BMW or BMW AG, is a German automobile,
+			motorcycle and engine manufacturing company founded in 1916.BMW is
+			headquartered in Munich, Bavaria. It also owns and produces Mini
+			cars, and is the parent company of Rolls-Royce Motor Cars. BMW
+			produces motorcycles under BMW Motorrad. In 2012, the BMW Group
+			produced 1,845,186 automobiles and 117,109 motorcycles across all of
+			its brands. BMW is part of the “German Big 3” luxury automakers,
+			along with Audi and Mercedes-Benz, which are the three best-selling
+			luxury automakers in the world.</div>
+	</div>
+	<div class="top-left">
+		<img src="ferrari.jpg" alt="snow" style="width: 100%;">
+		<div class="top-left">Ferrari has a rich racing history and is a
+			well known premium car brand. The fastest street Ferrari is the F50
+			GT1, which can go over 370 kph (about 222 mph). The most powerful
+			Ferrari is the FXX, which has about 800 horsepower. The FXX is a
+			lighter, improved version of the F60 Enzo; it is Ferrari's most
+			exclusive model, which you have to be chosen to own. It is basically
+			a race car that you can buy from Ferrari. The car is so extreme
+			(completely flat tires, low ride height, and no roadcar safety
+			features such as Airbags) that it cannot be driven on roads legally.
+			Ferrari will keep it for you at their Factory in Maranello in Italy.
+			You can go to Italy and drive it on their private race track, or have
+			it transported to another race track around the world, the same as if
+			you were driving for a racing team. Thirty have been built and all
+			but two were sold to customers for $2,500,000 each. Ferrari gave one
+			to seven-time Formula 1 World Champion Michael Schumacer, who had
+			driven for Ferrari for ten years when he retired in 2006, having
+			brought Ferrari much success. Ferrari made his FXX different by
+			painting it black. The other twenty-nine are either red or white,
+			with stripes painted in the other colour.</div>
+	</div>
+</body>
+</html>

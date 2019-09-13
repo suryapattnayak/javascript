@@ -1,0 +1,8 @@
+package exercise.java;
+
+abstract class price {
+
+	public void value() {
+		
+	}
+}

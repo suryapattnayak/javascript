@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<p>Enter login details<p>
+<form action="TestVaid" method="post">
+Enter User Name:<input type="text" name="username"><br>
+		Enter password:<input type="password" name="pwd"><br> <input
+			type="submit" name="login"><br>
+</form>
+</body>
+</html>

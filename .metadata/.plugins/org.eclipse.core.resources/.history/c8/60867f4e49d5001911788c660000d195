@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  color: white;
+}
+</style>
+</head>
+<body>
+<div class="top-left">
+  <img src="bmw.jpg" alt="Snow" style="width:100%;">
+  <div class="top-left">Bayerische Motoren Werke AG, commonly known as Bavarian Motor Works, BMW or BMW AG, is a German automobile, motorcycle and engine manufacturing company founded in 1916.BMW is headquartered in Munich, Bavaria. It also owns and produces Mini cars, and is the parent company of Rolls-Royce Motor Cars. BMW produces motorcycles under BMW Motorrad. In 2012, the BMW Group produced 1,845,186 automobiles and 117,109 motorcycles across all of its brands. BMW is part of the “German Big 3” luxury automakers, along with Audi and Mercedes-Benz, which are the three best-selling luxury automakers in the world.</div>
+</div>
+</body>
+</html>

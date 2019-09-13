@@ -1,0 +1,69 @@
+package Assignment2;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+	}
+
+}
+class State implements Comparable<State>
+{
+	private String name;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public State(String name) {
+		super();
+		this.name = name;
+	}
+
+	@Override
+	public int compareTo(State o) {
+		// TODO Auto-generated method stub
+		return o.name.compareTo(name);
+	}
+
+}
+class Country
+{
+	private String name;
+	List<State> li=new ArrayList<State>();
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public List<State> getLi() {
+		return li;
+	}
+	public void setLi(List<State> li) {
+		this.li = li;
+	}
+	public Country(String name) {
+		super();
+		this.name = name;
+	}
+	public void addState()
+	{
+		Map<Country, State> mc=new Map<Country, State>;
+	}
+	public void getStateList()
+	{
+		Collections.sort(li);
+	}
+}

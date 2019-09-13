@@ -1,0 +1,7 @@
+package exercise.java;
+
+public interface fruit {
+
+	public void taste();
+	public void color();
+}

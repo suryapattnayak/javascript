@@ -1,0 +1,23 @@
+package exercise.java;
+
+import java.io.FileWriter;
+
+public class WritefileClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		try {
+			
+			FileWriter fileWriter=new FileWriter("D:\\\\file.txt");
+			fileWriter.write("welcome to niit ");
+			fileWriter.append("empcode is 50043772");
+			fileWriter.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+		System.out.println("sucess........");
+	}
+
+}

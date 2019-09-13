@@ -1,0 +1,14 @@
+package exercise.java;
+
+public class Apple extends price  {
+
+
+	public static void main(String[] args)
+	{
+		Apple a=new Apple();
+		a.taste();
+		a.color();
+		a.value();
+		a.result();
+	}
+}

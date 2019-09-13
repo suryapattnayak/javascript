@@ -1,0 +1,15 @@
+package Lambda;
+
+import java.util.function.Function;
+
+public class Functionalambda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		String str="hello lambda";
+		Function<String,Integer>len=(str)->str.length();
+		System.out.println("length of the string is::"+len.apply(str));
+	}
+
+}

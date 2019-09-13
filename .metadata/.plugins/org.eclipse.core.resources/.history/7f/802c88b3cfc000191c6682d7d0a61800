@@ -1,0 +1,48 @@
+package exercise.java;
+
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.TreeSet;
+class Name
+{
+	private String name;
+	private int age;
+	public Name(String name, int age) {
+		super();
+		this.name = name;
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	
+}
+
+public class TreeSetExample implements Comparator<Name> {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		List<Name> l=new ArrayList<>();
+	}
+
+
+
+	@Override
+	public int compare(Name o1, Name o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

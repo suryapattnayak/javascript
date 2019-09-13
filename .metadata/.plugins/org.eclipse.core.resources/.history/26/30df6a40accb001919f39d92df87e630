@@ -1,0 +1,29 @@
+package exercise.java;
+
+abstract class price implements fruit  {
+
+	price p=new price() 
+			{
+		
+			};
+	@Override
+	public void taste() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void color() {
+		// TODO Auto-generated method stub
+		
+	}
+	public void value() {
+		System.out.println("price is 100 per kg");
+	}
+	public void result()
+	{
+		int k=p.add(6, 7);
+		System.out.println(k);
+	}
+
+}

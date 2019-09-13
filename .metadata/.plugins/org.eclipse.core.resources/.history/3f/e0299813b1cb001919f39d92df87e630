@@ -1,0 +1,19 @@
+package exercise.java;
+
+import java.util.Scanner;
+
+public class ThrowThrowsExample {
+	
+	public static void main(String[] args) throws Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		if(b==0)
+			throw new ArithmeticException("in valid value");
+		else
+			System.out.println(a/b);
+		
+	}
+
+}

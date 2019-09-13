@@ -1,0 +1,46 @@
+package exercise.java;
+
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Scanner;
+class name{
+	private int age;
+	private String name;
+	public name(int age, String name) {
+		super();
+		this.age = age;
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+}
+public class ComparatorExercise implements Comparator<name> {
+
+	public static void main(String[] args) {
+		
+		Scanner sc=new Scanner(System.in);
+		List<name> l=new ArrayList<>();
+		for(int i=0;i<5;i++)
+		{
+			l.add(new name(sc.nextInt(), sc.next()));
+		}
+	}
+	@Override
+	public int compare(name o1, name o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

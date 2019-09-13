@@ -1,0 +1,32 @@
+package exercise.java;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.Scanner;
+
+public class WritefileClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		
+		System.out.println("enter your name");
+
+		try {
+			
+			FileWriter fileWriter=new FileWriter("D:\\\\file.txt");
+			BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
+			fileWriter.write(sc.next());
+			bufferedWriter.newLine();
+			fileWriter.append("welcome to niit ");
+			bufferedWriter.newLine();
+			fileWriter.append("empcode is 50043772");
+			fileWriter.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+		System.out.println("sucess........");
+	}
+
+}

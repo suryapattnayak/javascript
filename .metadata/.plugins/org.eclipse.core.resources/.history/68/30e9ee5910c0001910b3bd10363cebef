@@ -1,0 +1,33 @@
+package ECommerce.pojo;
+
+public class ecommerceAdmin {
+	class product
+	{
+		private String ProductName;
+		private int registationNo;
+		private double Price;
+		private String SellerName;
+		private int MobileNo;
+		public product(String productName, int registationNo, double price, String sellerName, int mobileNo) {
+			super();
+			this.ProductName = productName;
+			this.registationNo = registationNo;
+			this.Price = price;
+			this.SellerName = sellerName;
+			this.MobileNo = mobileNo;
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("      Welcome Admin    ");
+		System.out.println("*********************************");
+		System.out.println("***1.Enter new product details***");
+		System.out.println("***2.View all products        ***");
+		System.out.println("***3.Search for a product     ***");
+		System.out.println("***4.Delete a product         ***");
+	}
+
+}

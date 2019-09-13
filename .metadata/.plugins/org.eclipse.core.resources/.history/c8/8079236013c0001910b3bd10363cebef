@@ -1,0 +1,82 @@
+package ECommerce.pojo;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class ecommerceAdmin {
+	class product
+	{
+		private String ProductName;
+		private int registationNo;
+		private double Price;
+		private String SellerName;
+		private int MobileNo;
+		public product(String productName, int registationNo, double price, String sellerName, int mobileNo) {
+			super();
+			this.ProductName = productName;
+			this.registationNo = registationNo;
+			this.Price = price;
+			this.SellerName = sellerName;
+			this.MobileNo = mobileNo;
+		}
+		public String getProductName() {
+			return ProductName;
+		}
+		public void setProductName(String productName) {
+			ProductName = productName;
+		}
+		public int getRegistationNo() {
+			return registationNo;
+		}
+		public void setRegistationNo(int registationNo) {
+			this.registationNo = registationNo;
+		}
+		public double getPrice() {
+			return Price;
+		}
+		public void setPrice(double price) {
+			Price = price;
+		}
+		public String getSellerName() {
+			return SellerName;
+		}
+		public void setSellerName(String sellerName) {
+			SellerName = sellerName;
+		}
+		public int getMobileNo() {
+			return MobileNo;
+		}
+		public void setMobileNo(int mobileNo) {
+			MobileNo = mobileNo;
+		}
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		product p=new product(sc.next(),sc.nextInt(),sc.nextDouble(),sc.nextLine(),sc.nextInt());
+		List<product> l=new ArrayList<ecommerceAdmin.product>();
+		System.out.println("      Welcome Admin    ");
+		System.out.println("*********************************");
+		System.out.println("***1.Enter new product details***");
+		System.out.println("***2.View all products        ***");
+		System.out.println("***3.Search for a product     ***");
+		System.out.println("***4.Delete a product         ***");
+		int option=sc.nextInt();
+		switch (option) {
+		case 1:
+				
+				l.add(p);
+			
+			break;
+
+		default:
+			break;
+		}
+		
+	}
+
+}

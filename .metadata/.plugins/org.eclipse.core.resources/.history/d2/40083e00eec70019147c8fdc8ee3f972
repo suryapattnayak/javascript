@@ -1,0 +1,47 @@
+package exercise.java;
+
+import java.io.IOException;
+
+//inner class example access in main method
+//if inner class is static the we can directly call with class name but 
+// if the class is non static then we 
+public class TestSynchronizationMethod extends Thread{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+TestSynchronizationMethod t1=new TestSynchronizationMethod();
+Runnable r1=new Runnable() {
+
+	@Override
+	public void  run()
+	{
+		WriteToFile wrf=new WriteToFile();
+		wrf.fileWriteMethod();
+		try {
+			Thread.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}};
+Runnable r2=new Runnable() {
+	
+	@Override
+	public void run() {
+			ReadFromFile rff=new ReadFromFile();
+			try {
+				rff.ReadFromFile();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+	}
+};
+
+//Thread r=new Thread();
+r1.run();
+r2.run();
+}
+
+}

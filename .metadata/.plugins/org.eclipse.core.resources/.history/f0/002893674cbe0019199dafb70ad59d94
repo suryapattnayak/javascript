@@ -1,0 +1,11 @@
+package exercise.java;
+
+public class Student {
+	
+	public staic void main(String[] args)
+	{
+		
+	}
+	
+
+}

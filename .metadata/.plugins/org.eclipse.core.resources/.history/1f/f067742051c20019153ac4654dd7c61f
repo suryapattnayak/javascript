@@ -1,0 +1,28 @@
+package exercise.java;
+
+public class MyThread extends Thread{
+	public void run()
+	{
+		int ctr=0;
+		for(int i=0;i<10;i++)
+		{
+			System.out.println(ctr++);
+		}
+		System.out.println(Thread.currentThread());
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyThread mt1=new MyThread();
+		Thread t1=new Thread(mt1);
+		Thread t2=new Thread(mt1);
+		t1.setName("thred1");
+		t1.start();
+		System.out.println(t1.getPriority());
+		t2.setName("thread2");
+		t2.start();
+		System.out.println(Thread.currentThread());
+		
+	}
+
+}

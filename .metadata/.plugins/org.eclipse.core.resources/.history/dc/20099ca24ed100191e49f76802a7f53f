@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<table width='50%' border='1px'>
+<tr>
+<td>product name</td><td>quantity</td><td>price</td></tr>
+<tr><td>soap</td><td>1</td><td>50</td></tr>
+<tr><td>shampoo</td><td>1</td><td>120</td></tr>
+<tr><td>toothbrush</td><td>1</td><td>50</td></tr>
+<tr><td>facewash</td><td>1</td><td>50</td></tr>
+</table>
+Enter which product you want to purchage
+
+<form action="CalculatorService" method="post">
+Product Name:<select>
+  <option name="prname">soap</option>
+  <option name="prname">shampoo</option>
+  <option name="prname">toothbrush</option>
+  <option name="prname">facewash</option>
+</select>
+quantity:<input type="text" name="qty" value=""><br>
+<input type="submit" name="AddtoCart" value="add to cart">
+</form>
+</body>
+</html>

@@ -1,0 +1,57 @@
+package exercise.java;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+class WriteToFile extends Thread{
+	public void fileWriteMethod() throws InterruptedException
+	{
+	try {
+		FileWriter fw1=new FileWriter("input.txt");
+		BufferedWriter fw=new BufferedWriter(fw1);
+		for(int i=1;i<=10;i++) {
+		fw.write("Hello this is line 1..."+ i +"times" );
+		fw.wait();
+	try {
+		Thread.sleep(1000);
+	} catch (InterruptedException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	System.out.println("Finished file writing process..");
+	fw.write(" ");
+		}
+		fw.close();
+	}catch (IOException e) {
+		// TODO Auto-generated catch block
+		//e.printStackTrace();
+	System.out.println("Error writing to file.."+e);
+	}	
+		
+	}
+	
+}
+class ReadFromFile extends Thread{
+	
+	public void ReadFromFile() throws IOException
+	{
+	try {
+		FileReader fr1=new FileReader("input.txt");
+		BufferedReader br1=new BufferedReader(fr1);
+		String str;
+		//int x;
+		while((str=br1.readLine())!=null)
+	System.out.println(str);
+		
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+		
+	}
+
+}

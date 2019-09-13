@@ -1,0 +1,7 @@
+package mokitoTest;
+
+public class CalculatorTest {
+	Calculator c=null;
+	
+
+}

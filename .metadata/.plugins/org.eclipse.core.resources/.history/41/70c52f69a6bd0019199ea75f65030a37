@@ -1,0 +1,52 @@
+package exercise.java;
+
+import java.util.ArrayList;
+import java.util.List;
+
+class user
+{
+	private String name;
+	private int age;
+	public user(String name,int age)
+	{
+		this.name=name;
+		this.age=age;
+	}
+	public String getname()
+	{
+		return name;
+		
+	}
+	public void setname(String name)
+	{
+		this.name=name;
+	}
+	public int getage()
+	{
+		return age;
+		
+	}
+	public void setage(int age)
+	{
+		this.age=age;
+	}
+}
+public class ArrayListUserDefinedObjectExample {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<user> users=new ArrayList<user>();
+		users.add(new user("surya",24));
+		users.add(new user("rajiv",23));
+		users.add(new user("ujjaval",22));
+		for(user usr:users ) {
+			System.out.println("name:"+usr.getname()+"\t"+"age:"+usr.getage());
+		}
+		/*users.forEach(user)
+		{
+			System.out.println("name:"+user.getname()+"age:"+user.getage());
+		}*/
+	}
+
+}

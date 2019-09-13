@@ -1,0 +1,5 @@
+package mokitoTest;
+
+public interface CalculatorService {
+
+}

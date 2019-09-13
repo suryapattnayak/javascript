@@ -1,0 +1,23 @@
+package exercise.java;
+
+public class Apple implements fruit {
+
+	@Override
+	public void taste() {
+		// TODO Auto-generated method stub
+		System.out.println("taste is sweet");
+	}
+
+	@Override
+	public void color() {
+		// TODO Auto-generated method stub
+		System.out.println("color is red");
+	}
+
+	public static void main(String[] args)
+	{
+		Apple a=new Apple();
+		a.taste();
+		a.color();
+	}
+}

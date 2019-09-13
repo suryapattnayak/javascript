@@ -1,0 +1,23 @@
+package exercise.java;
+
+import java.util.Comparator;
+class name{
+	
+}
+public class ComparatorExercise implements Comparator<name> {
+
+	public static void main(String[] args) {
+		
+		
+		
+		
+		
+		
+	}
+	@Override
+	public int compare(name o1, name o2) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

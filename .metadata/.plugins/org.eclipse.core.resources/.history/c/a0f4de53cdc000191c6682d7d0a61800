@@ -1,0 +1,54 @@
+package exercise.java;
+
+import java.util.Comparator;
+class NameAge
+{
+	private String name;
+	private int age;
+	
+
+	public NameAge(String name, Integer age) {
+		this.name = name;
+		this.age = age;
+	}
+	
+	
+
+
+	public String getName() {
+		return name;
+	}
+
+
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+
+
+	public int getAge() {
+		return age;
+	}
+
+
+
+
+	public void setAge(Integer age) {
+		this.age = age;
+	}
+}
+public class ComparatorExercise implements Comparator<NameAge>{
+
+	@Override
+	public int compare(NameAge o1, NameAge o2) {
+		// TODO Auto-generated method stub
+		int name=o1.getName().compareTo(o2.getName());
+		int age=o1.getAge().
+		return 0;
+	}
+
+
+}

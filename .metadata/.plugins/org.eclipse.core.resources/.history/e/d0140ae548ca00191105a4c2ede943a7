@@ -1,0 +1,59 @@
+package exercise.java;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+
+public class MyDaate {
+
+	private int year,month,day;
+	SimpleDateFormat sdf=new SimpleDateFormat("yyyy-mm-dd");
+	Calendar can=Calendar.getInstance();
+	public MyDaate(int year, int month, int day) {
+		super();
+		this.year = year;
+		this.month = month;
+		this.day = day;
+		can.set(year, month, day);
+	}
+
+	public MyDaate() {
+		super();
+		System.out.println();
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public void setYear(int year) {
+		this.year = year;
+	}
+
+	public int getMonth() {
+		return month;
+	}
+
+	public void setMonth(int month) {
+		this.month = month;
+	}
+
+	public int getDay() {
+		return day;
+	}
+
+	public void setDay(int day) {
+		this.day = day;
+	}
+	public void  addDays(int days)
+	{
+		can.add(can.DAY_OF_MONTH, days);
+		String mydate=sdf.format(can.getTime());
+		System.out.println(mydate);
+	}
+	
+	public static void main(String[] args)
+	{
+		MyDaate d=new MyDaate(2019, 2, 24);
+		d.addDays(7);
+	}
+}

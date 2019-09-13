@@ -1,0 +1,25 @@
+package exercise.java;
+
+import java.util.Scanner;
+
+public class ThrowThrowsExample {
+	
+	public static void main(String[] args) throws Exception
+	{
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		try {
+			if(b==0)
+			{
+				b=1;
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(a/b);
+		}
+		System.out.println(a/b);
+		
+	}
+
+}

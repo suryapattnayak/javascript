@@ -1,0 +1,11 @@
+package test;
+
+import javax.jws.WebService;
+import javax.servlet.http.HttpServlet;
+
+@WebService("/MyServlet")
+public class MyServlet extends HttpServlet{
+
+	
+	
+}

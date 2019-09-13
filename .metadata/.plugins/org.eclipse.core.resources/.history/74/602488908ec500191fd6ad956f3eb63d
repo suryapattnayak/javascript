@@ -1,0 +1,16 @@
+package exercise.java;
+
+public class pattern2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		if(args.length!=2)
+		{
+			System.out.println("usag:java testregex string regexp");
+			System.exit(0);
+		}
+		System.out.println("input:\"+ags[0]+);
+
+	}
+
+}

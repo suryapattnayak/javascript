@@ -1,0 +1,11 @@
+package exercise.java;
+
+import java.awt.peer.FramePeer;
+
+abstract class price implements fruit {
+
+	public void value() {
+		System.out.println("price is 100 per kg");
+	}
+	
+}
